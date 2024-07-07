@@ -14,5 +14,7 @@ list_rmody
 list_rmody2<-sapply(list_r,sum)# simple  output
 list_rmody2
 
-list_rmody2<-sapply(list_r,sum)#apply() for lists only int or string 
+list_rmody2<-mapply(sum,m,list_r)#apply(fun,var1,var2) 
 list_rmody2
+
+
